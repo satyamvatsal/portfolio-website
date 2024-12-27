@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"  id='main-html'>
+    <head> <%- include('./partials/head') %> </head>
+    <title>Contact | Satyam Vatsal</title>
+    <body>
+      <%- include('./partials/nav') %>
+      <div class="mb-5" id="contact-parent">
+        <div id="contact-details">
+          <h2> Satyam Vatsal</h2>
+          <p> <i class="fa fa-whatsapp "> </i> +917061094197 </p>
+          <p><i class="fa fa-envelope" aria-hidden="true" class="link"> </i>  satyamvatsal257@gmail.com </p>
+          <p>  <i class="fa fa-map-marker" aria-hidden="true" > </i> Bhopal, Madhya Pradesh, India </p>
+          <%- include('./partials/contact-button') %>
+        <div id="contact">
+        <h1 class="text-center p-5 contact-heading">Contact me </h1>
+      <form action='/contact' method='post'>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+        </div>
+        <div class=" mb-3">
+          <label for="comment"class=" form-label">Comments</label>
+          <textarea class="form-control" placeholder="Leave a comment here" id="comment" name="comment" style="height: 100px"></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-danger mb-3">Submit</button>
+        <% if(locals.message) {%>
+          <div class="alert alert-primary" role="alert"><%= message%></div>
+        <% } %>
+      </form>
+        </div>
+      </div>
+      <div class="container footer">
+      <p id="userCount"></p>
+      </div>
+      <%- include("./partials/footer") %>
+    <%- include('./partials/scripts') %>
+    </body>
+</html>
