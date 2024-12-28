@@ -28,6 +28,6 @@ io.on("connection", (socket) => {
   });
 });
 app.use(express.urlencoded({ extended: false }));
-app.use("/", homeRouter);
 app.use(express.static(path.join(__dirname, "public")));
+app.use("/", homeRouter);
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
