@@ -4,12 +4,11 @@ const path = require("path");
 const mongoose = require("mongoose");
 const homeRouter = require("./routes/home");
 const { Server } = require("socket.io");
+require("dotenv").config();
 const PORT = process.env.PORT || 8000;
 const app = express();
 mongoose
-  .connect(
-    "mongodb+srv://satyamvatsal257:pgWPWvbIVKi4m17v@cluster0.e8nxl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/comment",
-  )
+  .connect(process.env.MONGODB_URI)
   .then(() => console.log("Mongodb connected"));
 const server = http.createServer(app);
 const io = new Server(server);
