@@ -10,6 +10,7 @@ const app = express();
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => console.log("Mongodb connected"));
+  .catch((err) => console.error("MongoDB connection error:", err));
 const server = http.createServer(app);
 const io = new Server(server);
 app.set("view engine", "ejs");
