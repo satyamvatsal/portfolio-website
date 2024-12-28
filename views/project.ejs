@@ -10,7 +10,7 @@
           <% for(let project of projects) { %>
             <% if(!project.fork) { %>
             <div class="col-md-4">
-              <div class="card  m-3" style="width: 100%;">
+              <div class="card  mt-3" style="width: 100%;">
                 <div class="row g-0">
                   <div class="col-4">
                     <img src="<%= `${project.html_url}/blob/${project.default_branch}/assets/img.png?raw=true`%>" class="img-fluid rounded-start m-2" alt="<%= project.name %>">

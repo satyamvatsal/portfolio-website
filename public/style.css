@@ -2,7 +2,7 @@
     color: white;
     font-weight: 700;
 }
-.btn{
+.btn {
     border-radius: 13px;
 }
 .nav-link:hover {
@@ -11,51 +11,48 @@
 body {
     font-family: "Lato", serif;
 }
-.nav-parent{
+.nav-parent {
     display: flex;
     flex-direction: row;
     align-items: space-around;
     justify-content: space-around;
 }
-.main-div{
+.main-div {
     dislpay: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 ::selection {
-           background-color: #d4372c;
-           color: #ffffff;
-           outline: #000000;
-       }
-#satyam-image{
-    width: 500px;
+    background-color: #d4372c;
+    color: #ffffff;
+    outline: #000000;
 }
-#about-me{
+#satyam-image {
+    max-width: 40%;
+    height: auto;
+}
+#about-me {
     font-weight: 500;
     font-style: normal;
 }
-#name-heading{
+#name-heading {
     align-self: center;
     justify-self: flex-start;
     margin-bottom: 100px;
     font-weight: 600;
 }
-.about{
+.about {
     max-width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: space-around;
 }
-.main-div{
+.main-div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-#page-title{
-}
-#nav-layout{
 }
 .cool-font {
     font-family: "Bungee Tint", "sans-serif";
@@ -71,35 +68,61 @@ body {
 }
 #contact-details {
     display: flex;
-    max-width: 50%;
+    max-width: 100%;
     flex-direction: column;
     align-items: center;
 }
 #contact {
     display: flex;
-    min-width: 40%;
     flex-direction: column;
-    box-flex
-    max-width: 50%;
+    max-width: 100%;
 }
-.footer{
+.form-label,
+.form-control {
+    max-width: 100%;
+}
+.footer {
     text-align: center;
 }
-.skills-head{
+.skills-head {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-.skills{
+.skills {
     min-width: 200px;
 }
-.progress{
+.progress {
     height: 10px;
 }
-.progress-bar{
+.progress-bar {
     height: 10px;
 }
-.section-desc{
+.section-desc {
     font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .nav-parent {
+        flex-direction: column;
+    }
+    .main-div {
+        flex-direction: column;
+    }
+    .skills-head {
+        flex-direction: column;
+    }
+    #satyam-image {
+        max-width: 80%;
+    }
+    #contact-parent {
+        flex-direction: column-reverse;
+    }
+    body {
+        font-size: 0.9rem;
+    }
+    #contact {
+        width: 80%;
+    }
 }

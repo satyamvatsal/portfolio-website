@@ -4,69 +4,70 @@
     <title>Satyam Vatsal</title>
     <body>
       <%- include('./partials/nav') %>
-      <div class="container main-div">
-          <img src = "/satyam-vatsal-light.png" id="satyam-image">
-          <div class="about ">
-              <h1 id="name-heading">👋, I'm Satyam Vatsal</h1>
-             <h4 id="about-me">I'm a passionate Computer Science undergraduate at MANIT Bhopal, with a deep interest in competitive programming, problem-solving, and building efficient, impactful software solutions.
-               Beyond coding, I am keen on personal growth and investing, and I’m preparing myself to make a meaningful career as a software engineer at top product-based companies.
-               Feel free to explore my projects and connect with me—I’m always open to learning, collaboration, and innovative ideas!
-             </h4>
-          </div>
-      </div>
       <div class="container">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Projects</h5>
-              <p class="card-text">
-                Discover a showcase of my hands-on experience, creativity, and problem-solving skills through these projects. Each project reflects my passion for technology and my journey of turning ideas into impactful solutions. Dive in to explore detailed implementations, innovative features, and challenges tackled!
-              </p>
-              <a href="/project" class="btn btn-danger">Go to projects</a>
+        <div class="container main-div">
+            <img src = "/satyam-vatsal-light.png" id="satyam-image">
+            <div class="about container">
+                <h1 id="name-heading">👋, I'm Satyam Vatsal</h1>
+              <h4 id="about-me mb-3">I'm a passionate Computer Science undergraduate at MANIT Bhopal, with a deep interest in competitive programming, problem-solving, and building efficient, impactful software solutions.
+                Beyond coding, I am keen on personal growth and investing, and I’m preparing myself to make a meaningful career as a software engineer at top product-based companies.
+                Feel free to explore my projects and connect with me—I’m always open to learning, collaboration, and innovative ideas!
+              </h4>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Resume</h5>
-              <p class="card-text">
-                Get a comprehensive view of my skills, education, and professional journey by downloading my resume. It highlights my achievements, expertise, and the value I bring to the table. Take the next step to explore how I can contribute to your team or project!
-              </p>
-              <a href="/resume.pdf" class="btn btn-danger">Access my CV</a>
-            </div>
-          </div>
-      </div>
-
-      <div class="container mb-5 p-3" >
-        <h1 class="fw mb-4"> Skills </h1>
-        <div class="container skills-head">
-          <section class="skills">
-            <h5 class="fw">C++ </h5>
-            <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </section>
-          <section class="skills">
-            <h5 class="fw">Python</h5>
-            <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </section>
-          <section class="skills">
-            <h5 class="fw">NodeJS </h5>
-            <div class="progress">
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </section>
-          <section class="skills">
-            <h5 class="fw">ExpressJS</h5>
-            <div class="progress">
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </section>
         </div>
-      </div>
+        <div class="container mt-4">
+            <div class="card mb-3">
+              <div class="card-body mb-4">
+                <h5 class="card-title">Projects</h5>
+                <p class="card-text mb-3">
+                  Discover a showcase of my hands-on experience, creativity, and problem-solving skills through these projects. Each project reflects my passion for technology and my journey of turning ideas into impactful solutions. Dive in to explore detailed implementations, innovative features, and challenges tackled!
+                </p>
+                <a href="/project" class="btn btn-danger">Go to projects</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Resume</h5>
+                <p class="card-text">
+                  Get a comprehensive view of my skills, education, and professional journey by downloading my resume. It highlights my achievements, expertise, and the value I bring to the table. Take the next step to explore how I can contribute to your team or project!
+                </p>
+                <a href="/resume.pdf" class="btn btn-danger">Access my CV</a>
+              </div>
+            </div>
+        </div>
 
-      <%- include('./partials/contact-button') %>
-    <%- include("./partials/footer") %>
-    <%- include('./partials/scripts') %>
+        <div class="container mb-5 p-3" >
+          <h2 class="fw mb-4"> Skills </h2>
+          <div class="container skills-head">
+            <section class="skills">
+              <h5 class="fw">C++ </h5>
+              <div class="progress">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </section>
+            <section class="skills">
+              <h5 class="fw">Python</h5>
+              <div class="progress">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </section>
+            <section class="skills">
+              <h5 class="fw">NodeJS </h5>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </section>
+            <section class="skills">
+              <h5 class="fw">ExpressJS</h5>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <%- include('./partials/contact-button') %>
+      </div>
+      <%- include("./partials/footer") %>
+      <%- include('./partials/scripts') %>
     </body>
 </html>
