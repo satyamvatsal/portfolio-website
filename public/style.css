@@ -102,7 +102,61 @@ body {
 .section-desc {
     font-size: 1.1rem;
 }
-
+.card {
+    padding: 5px;
+}
+.animateLeft {
+    animation: animateLeft 1s ease;
+}
+.animateRight {
+    animation: animateRight 1s ease;
+}
+.animateUp {
+    animation: animateUp 1s ease;
+}
+.animateDown {
+    animation: animateDown 1s ease;
+}
+@keyframes animateUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes animateDown {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes animateRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes animateLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 @media (max-width: 768px) {
     .nav-parent {
         flex-direction: column;
