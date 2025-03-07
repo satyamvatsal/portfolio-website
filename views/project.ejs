@@ -6,19 +6,19 @@
       <%- include('./partials/nav') %>
 
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center animateDown">
           <% for(let project of projects) { %>
             <% if(!project.fork) { %>
             <div class="col-md-4">
               <div class="card  mt-3" style="width: 100%;">
                 <div class="row g-0">
-                  <div class="col-4">
-                    <img src="<%= `${project.html_url}/blob/${project.default_branch}/assets/img.png?raw=true`%>" class="img-fluid rounded-start m-2" alt="<%= project.name %>">
+                  <div class="col-4 ">
+                    <img src="<%= `${project.html_url}/blob/${project.default_branch}/assets/img.png?raw=true`%>" class="img-fluid rounded-start m-3" alt="<%= project.name %>">
                   </div>
                   <div class="col-8">
-                    <div class="card-body">
-                      <h5 class="card-title"><%= project.name %></h5>
-                      <p class="card-text"><%= project.description %></p>
+                    <div class="card-body m-3">
+                      <h5 class="card-title "><%= project.name %></h5>
+                      <p class="card-text "><%= project.description %></p>
                       <a href="<%= project.html_url %>" class="btn btn-danger">Github link</a>
                     </div>
                   </div>

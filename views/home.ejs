@@ -1,34 +1,33 @@
 <!doctype html>
-<html lang="en"  id='main-html'>
+<html lang="en"  id='main-html' data-bs-theme='dark'>
     <head> <%- include('./partials/head') %> </head>
     <title>Satyam Vatsal</title>
     <body>
       <%- include('./partials/nav') %>
       <div class="container">
         <div class="container main-div">
-            <img src = "/satyam-vatsal-light.png" id="satyam-image">
-            <div class="about container">
+            <img src = "/satyam-vatsal-light.webp" id="satyam-image" class="animateDown">
+            <div class="about container animateRight">
                 <h1 id="name-heading">👋, I'm Satyam Vatsal</h1>
-              <h4 id="about-me mb-3">I'm a passionate Computer Science undergraduate at MANIT Bhopal, with a deep interest in competitive programming, problem-solving, and building efficient, impactful software solutions.
+              <h4 id="about-me mb-3 " class="fst-italic">I'm a passionate Computer Science undergraduate at MANIT Bhopal, with a deep interest in competitive programming, problem-solving, and building efficient, impactful software solutions.
                 Beyond coding, I am keen on personal growth and investing, and I’m preparing myself to make a meaningful career as a software engineer at top product-based companies.
-                Feel free to explore my projects and connect with me—I’m always open to learning, collaboration, and innovative ideas!
               </h4>
             </div>
         </div>
         <div class="container mt-4">
             <div class="card mb-3">
-              <div class="card-body mb-4">
-                <h5 class="card-title">Projects</h5>
-                <p class="card-text mb-3">
+              <div class="card-body mb-4 animateLeft">
+                <h5 class="card-title fw-bold fs-4">Projects</h5>
+                <p class="card-text mb-3 fw-bold fs-6">
                   Discover a showcase of my hands-on experience, creativity, and problem-solving skills through these projects. Each project reflects my passion for technology and my journey of turning ideas into impactful solutions. Dive in to explore detailed implementations, innovative features, and challenges tackled!
                 </p>
                 <a href="/project" class="btn btn-danger">Go to projects</a>
               </div>
             </div>
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Resume</h5>
-                <p class="card-text">
+              <div class="card-body animateRight">
+                <h5 class="card-title fw-bold fs-4">Resume</h5>
+                <p class="card-text fw-bold">
                   Get a comprehensive view of my skills, education, and professional journey by downloading my resume. It highlights my achievements, expertise, and the value I bring to the table. Take the next step to explore how I can contribute to your team or project!
                 </p>
                 <a href="/resume.pdf" class="btn btn-danger">Access my CV</a>
@@ -36,7 +35,7 @@
             </div>
         </div>
 
-        <div class="container mb-5 p-3" >
+        <div class="container mb-5 p-3 animateDown" >
           <h2 class="fw mb-4"> Skills </h2>
           <div class="container skills-head">
             <section class="skills">
